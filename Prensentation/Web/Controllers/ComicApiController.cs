@@ -8,6 +8,7 @@ using CMS.Data.EFCore;
 using CMS.Data.Service.ComicService;
 using HtmlAgilityPack;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using Web.Models;
 
 namespace Web.Controllers
@@ -42,19 +43,24 @@ namespace Web.Controllers
             //     _service.Insert(comic);
             //     _service.Save();
             // }
-            using (CrawlDB _context = new CrawlDB())
+            using (var _context = new CrawlDB())
             {
-                Comic comic = new Comic()
-                {
-                    Title = "Test 2",
-                    Series = new List<Series>(){
-                        new Series{ Content =" Test 2" },
-                        new Series {Content = "TEst 3"}
-                    }
 
-                };
-                _service.Insert(comic);
-                _service.Save();
+                var comic = _context.Comics.Include(s =>s.Series).FirstOrDefault(x => x.Id == 2);
+                var series1 = new Series { Content = "ainfaouwnfaowujfnjoawf" };
+
+                comic.Series.Add(series1);
+                // Comic comic = new Comic()
+                // {
+                //     Title = "Test 2",
+                //     Series = new List<Series>(){
+                //         new Series{ Content =" Test 2" },
+                //         new Series {Content = "TEst 3"}
+                //     }
+
+                // };
+                // _context.Comics.Insert(comic);
+                _context.SaveChanges();
             }
 
 
