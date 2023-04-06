@@ -4,6 +4,7 @@ using System.Linq;
 using System.Net.Http;
 using System.Threading.Tasks;
 using CMS.Core.Domain;
+using CMS.Data.EFCore;
 using CMS.Data.Service.ComicService;
 using HtmlAgilityPack;
 using Microsoft.AspNetCore.Mvc;
@@ -22,24 +23,41 @@ namespace Web.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> CreateAsync([FromBody] UrlModel model)
+        public async Task<IActionResult> CreateAsync([FromBody] Series series)
         {
-            HtmlDocument htmlDoc = new HtmlDocument();
-            string htmlString = await GetHtmlAsync(model.Url);
-            if (htmlString != null && htmlString != "")
+
+            // HtmlDocument htmlDoc = new HtmlDocument();
+            // string htmlString = await GetHtmlAsync(model.Url);
+            // if (htmlString != null && htmlString != "")
+            // {
+            //     htmlDoc.LoadHtml(htmlString);
+            // }
+            // HtmlNode nodeUrlLink = htmlDoc.DocumentNode.SelectSingleNode("//div[@id='chapter-c']");
+            // var body = nodeUrlLink.InnerHtml;
+            // Comic comic= new Comic(){
+            //   Content = body  
+            // };
+            // if (body != null)
+            // {
+            //     _service.Insert(comic);
+            //     _service.Save();
+            // }
+            using (CrawlDB _context = new CrawlDB())
             {
-                htmlDoc.LoadHtml(htmlString);
-            }
-            HtmlNode nodeUrlLink = htmlDoc.DocumentNode.SelectSingleNode("//div[@id='chapter-c']");
-            var body = nodeUrlLink.InnerHtml;
-            Comic comic= new Comic(){
-              Content = body  
-            };
-            if (body != null)
-            {
+                Comic comic = new Comic()
+                {
+                    Title = "Test 2",
+                    Series = new List<Series>(){
+                        new Series{ Content =" Test 2" },
+                        new Series {Content = "TEst 3"}
+                    }
+
+                };
                 _service.Insert(comic);
                 _service.Save();
             }
+
+
 
             return Ok();
         }

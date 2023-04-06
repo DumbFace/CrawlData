@@ -9,7 +9,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace CMS.Data.Migrations
 {
     [DbContext(typeof(CrawlDB))]
-    [Migration("20230406082505_init")]
+    [Migration("20230406170014_init")]
     partial class init
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -27,7 +27,7 @@ namespace CMS.Data.Migrations
                         .HasColumnType("int")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-                    b.Property<string>("Content")
+                    b.Property<string>("Thumb")
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Title")
@@ -36,6 +36,42 @@ namespace CMS.Data.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Comics");
+                });
+
+            modelBuilder.Entity("CMS.Core.Domain.Series", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<int>("ComicId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Content")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("ComicId");
+
+                    b.ToTable("Series");
+                });
+
+            modelBuilder.Entity("CMS.Core.Domain.Series", b =>
+                {
+                    b.HasOne("CMS.Core.Domain.Comic", "Comic")
+                        .WithMany("Series")
+                        .HasForeignKey("ComicId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Comic");
+                });
+
+            modelBuilder.Entity("CMS.Core.Domain.Comic", b =>
+                {
+                    b.Navigation("Series");
                 });
 #pragma warning restore 612, 618
         }
