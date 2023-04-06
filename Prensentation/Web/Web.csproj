@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+  <ItemGroup>
+    <ProjectReference Include="..\Web.Factory\Web.Factory.csproj" />
+    <ProjectReference Include="..\..\Library\CMS.Data\CMS.Data.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="HtmlAgilityPack" Version="1.11.46" />
+  </ItemGroup>
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+</Project>
