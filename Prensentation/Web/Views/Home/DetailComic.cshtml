@@ -1,0 +1,30 @@
+@model Comic
+
+<div class="container">
+    <div class="row info-comic">
+        <div class="col-sm-4">
+            <figure>
+                <img src="@Model.Thumb" alt="@Model.Title">
+            </figure>
+        </div>
+        <div class="col-sm-8">
+            <h1>@Model.Title</h1>
+        </div>
+    </div>
+
+    <div class="row list-comic">
+        <div class="col-sm-12 custom-border-bottom">
+            <h2>Danh sách truyện</h2>
+        </div>
+        <div class="col-sm-12">
+            @foreach (var item in Model.Series)
+            {
+                <h3>
+                    <a href="/@Model.Url/chuong-@item.Chap">
+                        @Model.Title - @item.Chap
+                    </a>
+                </h3>
+            }
+        </div>
+    </div>
+</div>

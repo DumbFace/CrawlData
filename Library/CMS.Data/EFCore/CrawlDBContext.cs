@@ -17,7 +17,7 @@ namespace CMS.Data.EFCore
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer("Server=.\\SQLEXPRESSKHANG;Database=CrawlDB;Trusted_Connection=True;");
+            optionsBuilder.UseSqlServer("Server=.\\SQLEXPRESS02;Database=CrawlDB;Trusted_Connection=True;");
         }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
@@ -31,6 +31,5 @@ namespace CMS.Data.EFCore
 
         public DbSet<Comic> Comics { get; set; }
         public DbSet<Series> Series { get; set; }
-
     }
 }

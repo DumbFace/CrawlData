@@ -1,0 +1,30 @@
+<div class="container">
+
+    <form>
+        <label for="">Nhập Link Url Cần Crawl</label>
+        <input type="text" id="text" class="form-control">
+        <button type="button" class="btn btn-success" onclick="Crawl()">Crawl</button>
+    </form>
+
+</div>
+
+@section scripts{
+<script>
+    function Crawl() {
+        var crawlModel = new Object();
+        crawlModel.Url = $("#text").val();
+        $.ajax({
+            type: "POST",
+            url: "/api/comic",
+            data: JSON.stringify(crawlModel),
+            contentType: "application/json; charset=UTF-8",
+            success: function (result) {
+                    console.log(result);
+            },
+            onerror: function (message) {
+                console.log(message);
+            }
+        })
+    }
+</script>
+}

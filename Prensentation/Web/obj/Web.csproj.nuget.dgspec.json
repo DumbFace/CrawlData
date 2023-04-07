@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "E:\\Workspace\\Repo\\Github\\CrawlData\\Prensentation\\Web\\Web.csproj": {}
+    "D:\\WorkSpace\\repo\\Github\\CrawlData\\Prensentation\\Web\\Web.csproj": {}
   },
   "projects": {
-    "E:\\Workspace\\Repo\\Github\\CrawlData\\Library\\CMS.Core\\CMS.Core.csproj": {
+    "D:\\WorkSpace\\repo\\Github\\CrawlData\\Library\\CMS.Core\\CMS.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Workspace\\Repo\\Github\\CrawlData\\Library\\CMS.Core\\CMS.Core.csproj",
+        "projectUniqueName": "D:\\WorkSpace\\repo\\Github\\CrawlData\\Library\\CMS.Core\\CMS.Core.csproj",
         "projectName": "CMS.Core",
-        "projectPath": "E:\\Workspace\\Repo\\Github\\CrawlData\\Library\\CMS.Core\\CMS.Core.csproj",
+        "projectPath": "D:\\WorkSpace\\repo\\Github\\CrawlData\\Library\\CMS.Core\\CMS.Core.csproj",
         "packagesPath": "C:\\Users\\Khang\\.nuget\\packages\\",
-        "outputPath": "E:\\Workspace\\Repo\\Github\\CrawlData\\Library\\CMS.Core\\obj\\",
+        "outputPath": "D:\\WorkSpace\\repo\\Github\\CrawlData\\Library\\CMS.Core\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
           "C:\\Users\\Khang\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -49,7 +45,8 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -58,25 +55,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.310\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "E:\\Workspace\\Repo\\Github\\CrawlData\\Library\\CMS.Data\\CMS.Data.csproj": {
+    "D:\\WorkSpace\\repo\\Github\\CrawlData\\Library\\CMS.Data\\CMS.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Workspace\\Repo\\Github\\CrawlData\\Library\\CMS.Data\\CMS.Data.csproj",
+        "projectUniqueName": "D:\\WorkSpace\\repo\\Github\\CrawlData\\Library\\CMS.Data\\CMS.Data.csproj",
         "projectName": "CMS.Data",
-        "projectPath": "E:\\Workspace\\Repo\\Github\\CrawlData\\Library\\CMS.Data\\CMS.Data.csproj",
+        "projectPath": "D:\\WorkSpace\\repo\\Github\\CrawlData\\Library\\CMS.Data\\CMS.Data.csproj",
         "packagesPath": "C:\\Users\\Khang\\.nuget\\packages\\",
-        "outputPath": "E:\\Workspace\\Repo\\Github\\CrawlData\\Library\\CMS.Data\\obj\\",
+        "outputPath": "D:\\WorkSpace\\repo\\Github\\CrawlData\\Library\\CMS.Data\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
           "C:\\Users\\Khang\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -90,8 +83,8 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "E:\\Workspace\\Repo\\Github\\CrawlData\\Library\\CMS.Core\\CMS.Core.csproj": {
-                "projectPath": "E:\\Workspace\\Repo\\Github\\CrawlData\\Library\\CMS.Core\\CMS.Core.csproj"
+              "D:\\WorkSpace\\repo\\Github\\CrawlData\\Library\\CMS.Core\\CMS.Core.csproj": {
+                "projectPath": "D:\\WorkSpace\\repo\\Github\\CrawlData\\Library\\CMS.Core\\CMS.Core.csproj"
               }
             }
           }
@@ -127,7 +120,8 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -136,25 +130,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.310\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "E:\\Workspace\\Repo\\Github\\CrawlData\\Prensentation\\Web.Factory\\Web.Factory.csproj": {
+    "D:\\WorkSpace\\repo\\Github\\CrawlData\\Prensentation\\Web.Factory\\Web.Factory.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Workspace\\Repo\\Github\\CrawlData\\Prensentation\\Web.Factory\\Web.Factory.csproj",
+        "projectUniqueName": "D:\\WorkSpace\\repo\\Github\\CrawlData\\Prensentation\\Web.Factory\\Web.Factory.csproj",
         "projectName": "Web.Factory",
-        "projectPath": "E:\\Workspace\\Repo\\Github\\CrawlData\\Prensentation\\Web.Factory\\Web.Factory.csproj",
+        "projectPath": "D:\\WorkSpace\\repo\\Github\\CrawlData\\Prensentation\\Web.Factory\\Web.Factory.csproj",
         "packagesPath": "C:\\Users\\Khang\\.nuget\\packages\\",
-        "outputPath": "E:\\Workspace\\Repo\\Github\\CrawlData\\Prensentation\\Web.Factory\\obj\\",
+        "outputPath": "D:\\WorkSpace\\repo\\Github\\CrawlData\\Prensentation\\Web.Factory\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
           "C:\\Users\\Khang\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -168,11 +158,11 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "E:\\Workspace\\Repo\\Github\\CrawlData\\Library\\CMS.Core\\CMS.Core.csproj": {
-                "projectPath": "E:\\Workspace\\Repo\\Github\\CrawlData\\Library\\CMS.Core\\CMS.Core.csproj"
+              "D:\\WorkSpace\\repo\\Github\\CrawlData\\Library\\CMS.Core\\CMS.Core.csproj": {
+                "projectPath": "D:\\WorkSpace\\repo\\Github\\CrawlData\\Library\\CMS.Core\\CMS.Core.csproj"
               },
-              "E:\\Workspace\\Repo\\Github\\CrawlData\\Library\\CMS.Data\\CMS.Data.csproj": {
-                "projectPath": "E:\\Workspace\\Repo\\Github\\CrawlData\\Library\\CMS.Data\\CMS.Data.csproj"
+              "D:\\WorkSpace\\repo\\Github\\CrawlData\\Library\\CMS.Data\\CMS.Data.csproj": {
+                "projectPath": "D:\\WorkSpace\\repo\\Github\\CrawlData\\Library\\CMS.Data\\CMS.Data.csproj"
               }
             }
           }
@@ -192,7 +182,8 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -201,25 +192,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.310\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "E:\\Workspace\\Repo\\Github\\CrawlData\\Prensentation\\Web\\Web.csproj": {
+    "D:\\WorkSpace\\repo\\Github\\CrawlData\\Prensentation\\Web\\Web.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Workspace\\Repo\\Github\\CrawlData\\Prensentation\\Web\\Web.csproj",
+        "projectUniqueName": "D:\\WorkSpace\\repo\\Github\\CrawlData\\Prensentation\\Web\\Web.csproj",
         "projectName": "Web",
-        "projectPath": "E:\\Workspace\\Repo\\Github\\CrawlData\\Prensentation\\Web\\Web.csproj",
+        "projectPath": "D:\\WorkSpace\\repo\\Github\\CrawlData\\Prensentation\\Web\\Web.csproj",
         "packagesPath": "C:\\Users\\Khang\\.nuget\\packages\\",
-        "outputPath": "E:\\Workspace\\Repo\\Github\\CrawlData\\Prensentation\\Web\\obj\\",
+        "outputPath": "D:\\WorkSpace\\repo\\Github\\CrawlData\\Prensentation\\Web\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
           "C:\\Users\\Khang\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -233,11 +220,11 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "E:\\Workspace\\Repo\\Github\\CrawlData\\Library\\CMS.Data\\CMS.Data.csproj": {
-                "projectPath": "E:\\Workspace\\Repo\\Github\\CrawlData\\Library\\CMS.Data\\CMS.Data.csproj"
+              "D:\\WorkSpace\\repo\\Github\\CrawlData\\Library\\CMS.Data\\CMS.Data.csproj": {
+                "projectPath": "D:\\WorkSpace\\repo\\Github\\CrawlData\\Library\\CMS.Data\\CMS.Data.csproj"
               },
-              "E:\\Workspace\\Repo\\Github\\CrawlData\\Prensentation\\Web.Factory\\Web.Factory.csproj": {
-                "projectPath": "E:\\Workspace\\Repo\\Github\\CrawlData\\Prensentation\\Web.Factory\\Web.Factory.csproj"
+              "D:\\WorkSpace\\repo\\Github\\CrawlData\\Prensentation\\Web.Factory\\Web.Factory.csproj": {
+                "projectPath": "D:\\WorkSpace\\repo\\Github\\CrawlData\\Prensentation\\Web.Factory\\Web.Factory.csproj"
               }
             }
           }
@@ -255,6 +242,10 @@
             "HtmlAgilityPack": {
               "target": "Package",
               "version": "[1.11.46, )"
+            },
+            "Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation": {
+              "target": "Package",
+              "version": "[5.0.10, )"
             }
           },
           "imports": [
@@ -263,7 +254,8 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -275,7 +267,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.310\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
         }
       }
     }

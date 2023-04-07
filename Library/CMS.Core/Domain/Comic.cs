@@ -13,6 +13,7 @@ namespace CMS.Core.Domain
         public int Id { get; set; }
         public string Title { get; set; }
         public string Thumb { get; set; }
+        public string Url { get; set; }
         public ICollection<Series> Series { get; set; } = new List<Series>();
     }
 }

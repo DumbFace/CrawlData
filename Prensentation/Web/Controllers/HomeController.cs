@@ -3,8 +3,11 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
+using CMS.Core.Domain;
+using CMS.Data.EFCore;
 using CMS.Data.Service.ComicService;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
 using Web.Models;
 
@@ -20,12 +23,49 @@ namespace Web.Controllers
 
         public IActionResult Index()
         {
-            var comic = _service.GetFirst();
+            List<Comic> comics = new List<Comic>();
+            using (var context = new CrawlDB())
+            {
+                comics = context.Comics.Include(x => x.Series).ToList();
+            }
+            return View(comics);
+        }
+
+        [Route("{url}")]
+        public IActionResult DetailComic(string url)
+        {
+            Comic comic = new Comic();
+            using (var context = new CrawlDB())
+            {
+                comic = context.Comics.Include(x => x.Series).FirstOrDefault(x => x.Url == url);
+            }
             return View(comic);
+        }
+
+        [Route("{url}/chuong-{chap}")]
+        public IActionResult Read(string url, string chap)
+        {
+            Comic comic = new Comic();
+            using (var context = new CrawlDB())
+            {
+                comic = context.Comics.Include(x => x.Series).FirstOrDefault(x => x.Url == url);
+            }
+
+            ComicViewModel comicViewModel = new ComicViewModel
+            {
+
+                Title = comic.Title,
+                Chap = comic.Series.Where(x => x.Chap == chap).FirstOrDefault().Chap,
+                Content = comic.Series.Where(x => x.Chap == chap).FirstOrDefault().Content,
+                Url = comic.Url
+            };
+
+            return View(comicViewModel);
         }
 
         public IActionResult Privacy()
         {
+
             return View();
         }
 
