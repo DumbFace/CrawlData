@@ -134,6 +134,74 @@
         }
       }
     },
+    "D:\\WorkSpace\\repo\\Github\\CrawlData\\Library\\CMS.Service\\CMS.Service.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\WorkSpace\\repo\\Github\\CrawlData\\Library\\CMS.Service\\CMS.Service.csproj",
+        "projectName": "CMS.Service",
+        "projectPath": "D:\\WorkSpace\\repo\\Github\\CrawlData\\Library\\CMS.Service\\CMS.Service.csproj",
+        "packagesPath": "C:\\Users\\Khang\\.nuget\\packages\\",
+        "outputPath": "D:\\WorkSpace\\repo\\Github\\CrawlData\\Library\\CMS.Service\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Khang\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "D:\\WorkSpace\\repo\\Github\\CrawlData\\Library\\CMS.Core\\CMS.Core.csproj": {
+                "projectPath": "D:\\WorkSpace\\repo\\Github\\CrawlData\\Library\\CMS.Core\\CMS.Core.csproj"
+              },
+              "D:\\WorkSpace\\repo\\Github\\CrawlData\\Library\\CMS.Data\\CMS.Data.csproj": {
+                "projectPath": "D:\\WorkSpace\\repo\\Github\\CrawlData\\Library\\CMS.Data\\CMS.Data.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "HtmlAgilityPack": {
+              "target": "Package",
+              "version": "[1.11.46, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
     "D:\\WorkSpace\\repo\\Github\\CrawlData\\Prensentation\\Web.Factory\\Web.Factory.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -222,6 +290,9 @@
             "projectReferences": {
               "D:\\WorkSpace\\repo\\Github\\CrawlData\\Library\\CMS.Data\\CMS.Data.csproj": {
                 "projectPath": "D:\\WorkSpace\\repo\\Github\\CrawlData\\Library\\CMS.Data\\CMS.Data.csproj"
+              },
+              "D:\\WorkSpace\\repo\\Github\\CrawlData\\Library\\CMS.Service\\CMS.Service.csproj": {
+                "projectPath": "D:\\WorkSpace\\repo\\Github\\CrawlData\\Library\\CMS.Service\\CMS.Service.csproj"
               },
               "D:\\WorkSpace\\repo\\Github\\CrawlData\\Prensentation\\Web.Factory\\Web.Factory.csproj": {
                 "projectPath": "D:\\WorkSpace\\repo\\Github\\CrawlData\\Prensentation\\Web.Factory\\Web.Factory.csproj"

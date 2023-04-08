@@ -1,0 +1,17 @@
+D:\WorkSpace\repo\Github\CrawlData\Library\CMS.Service\obj\Debug\net5.0\CMS.Service.csproj.AssemblyReference.cache
+D:\WorkSpace\repo\Github\CrawlData\Library\CMS.Service\obj\Debug\net5.0\CMS.Service.GeneratedMSBuildEditorConfig.editorconfig
+D:\WorkSpace\repo\Github\CrawlData\Library\CMS.Service\obj\Debug\net5.0\CMS.Service.AssemblyInfoInputs.cache
+D:\WorkSpace\repo\Github\CrawlData\Library\CMS.Service\obj\Debug\net5.0\CMS.Service.AssemblyInfo.cs
+D:\WorkSpace\repo\Github\CrawlData\Library\CMS.Service\obj\Debug\net5.0\CMS.Service.csproj.CoreCompileInputs.cache
+D:\WorkSpace\repo\Github\CrawlData\Library\CMS.Service\bin\Debug\net5.0\CMS.Service.deps.json
+D:\WorkSpace\repo\Github\CrawlData\Library\CMS.Service\bin\Debug\net5.0\CMS.Service.dll
+D:\WorkSpace\repo\Github\CrawlData\Library\CMS.Service\bin\Debug\net5.0\CMS.Service.pdb
+D:\WorkSpace\repo\Github\CrawlData\Library\CMS.Service\bin\Debug\net5.0\CMS.Core.dll
+D:\WorkSpace\repo\Github\CrawlData\Library\CMS.Service\bin\Debug\net5.0\CMS.Data.dll
+D:\WorkSpace\repo\Github\CrawlData\Library\CMS.Service\bin\Debug\net5.0\CMS.Data.pdb
+D:\WorkSpace\repo\Github\CrawlData\Library\CMS.Service\bin\Debug\net5.0\CMS.Core.pdb
+D:\WorkSpace\repo\Github\CrawlData\Library\CMS.Service\obj\Debug\net5.0\CMS.Service.csproj.CopyComplete
+D:\WorkSpace\repo\Github\CrawlData\Library\CMS.Service\obj\Debug\net5.0\CMS.Service.dll
+D:\WorkSpace\repo\Github\CrawlData\Library\CMS.Service\obj\Debug\net5.0\refint\CMS.Service.dll
+D:\WorkSpace\repo\Github\CrawlData\Library\CMS.Service\obj\Debug\net5.0\CMS.Service.pdb
+D:\WorkSpace\repo\Github\CrawlData\Library\CMS.Service\obj\Debug\net5.0\ref\CMS.Service.dll

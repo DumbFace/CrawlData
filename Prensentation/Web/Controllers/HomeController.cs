@@ -5,7 +5,6 @@ using System.Linq;
 using System.Threading.Tasks;
 using CMS.Core.Domain;
 using CMS.Data.EFCore;
-using CMS.Data.Service.ComicService;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
@@ -15,11 +14,11 @@ namespace Web.Controllers
 {
     public class HomeController : Controller
     {
-        private readonly IComicService _service;
-        public HomeController(IComicService service)
-        {
-            _service = service;
-        }
+        // private readonly IComicService _service;
+        // public HomeController(IComicService service)
+        // {
+        //     _service = service;
+        // }
 
         public IActionResult Index()
         {

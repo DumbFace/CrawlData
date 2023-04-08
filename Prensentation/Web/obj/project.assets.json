@@ -1981,6 +1981,21 @@
           "bin/placeholder/CMS.Data.dll": {}
         }
       },
+      "CMS.Service/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "CMS.Core": "1.0.0",
+          "CMS.Data": "1.0.0",
+          "HtmlAgilityPack": "1.11.46"
+        },
+        "compile": {
+          "bin/placeholder/CMS.Service.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/CMS.Service.dll": {}
+        }
+      },
       "Web.Factory/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v5.0",
@@ -6638,6 +6653,11 @@
       "path": "../../Library/CMS.Data/CMS.Data.csproj",
       "msbuildProject": "../../Library/CMS.Data/CMS.Data.csproj"
     },
+    "CMS.Service/1.0.0": {
+      "type": "project",
+      "path": "../../Library/CMS.Service/CMS.Service.csproj",
+      "msbuildProject": "../../Library/CMS.Service/CMS.Service.csproj"
+    },
     "Web.Factory/1.0.0": {
       "type": "project",
       "path": "../Web.Factory/Web.Factory.csproj",
@@ -6647,6 +6667,7 @@
   "projectFileDependencyGroups": {
     "net5.0": [
       "CMS.Data >= 1.0.0",
+      "CMS.Service >= 1.0.0",
       "HtmlAgilityPack >= 1.11.46",
       "Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation >= 5.0.10",
       "Web.Factory >= 1.0.0"
@@ -6681,6 +6702,9 @@
           "projectReferences": {
             "D:\\WorkSpace\\repo\\Github\\CrawlData\\Library\\CMS.Data\\CMS.Data.csproj": {
               "projectPath": "D:\\WorkSpace\\repo\\Github\\CrawlData\\Library\\CMS.Data\\CMS.Data.csproj"
+            },
+            "D:\\WorkSpace\\repo\\Github\\CrawlData\\Library\\CMS.Service\\CMS.Service.csproj": {
+              "projectPath": "D:\\WorkSpace\\repo\\Github\\CrawlData\\Library\\CMS.Service\\CMS.Service.csproj"
             },
             "D:\\WorkSpace\\repo\\Github\\CrawlData\\Prensentation\\Web.Factory\\Web.Factory.csproj": {
               "projectPath": "D:\\WorkSpace\\repo\\Github\\CrawlData\\Prensentation\\Web.Factory\\Web.Factory.csproj"

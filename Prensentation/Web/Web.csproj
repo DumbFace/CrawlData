@@ -2,6 +2,7 @@
   <ItemGroup>
     <ProjectReference Include="..\Web.Factory\Web.Factory.csproj" />
     <ProjectReference Include="..\..\Library\CMS.Data\CMS.Data.csproj" />
+    <ProjectReference Include="..\..\Library\CMS.Service\CMS.Service.csproj" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="HtmlAgilityPack" Version="1.11.46" />

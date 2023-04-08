@@ -397,3 +397,5 @@ D:\WorkSpace\repo\Github\CrawlData\Prensentation\Web\obj\Debug\net5.0\Web.MvcApp
 D:\WorkSpace\repo\Github\CrawlData\Prensentation\Web\obj\Debug\net5.0\Razor\Views\Home\DetailComic.cshtml.g.cs
 D:\WorkSpace\repo\Github\CrawlData\Prensentation\Web\obj\Debug\net5.0\Razor\Views\Home\Read.cshtml.g.cs
 D:\WorkSpace\repo\Github\CrawlData\Prensentation\Web\obj\Debug\net5.0\Razor\Views\Crawl\CrawlData.cshtml.g.cs
+D:\WorkSpace\repo\Github\CrawlData\Prensentation\Web\bin\Debug\net5.0\CMS.Service.dll
+D:\WorkSpace\repo\Github\CrawlData\Prensentation\Web\bin\Debug\net5.0\CMS.Service.pdb

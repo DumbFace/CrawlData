@@ -34,6 +34,7 @@
       "Web/1.0.0": {
         "dependencies": {
           "CMS.Data": "1.0.0",
+          "CMS.Service": "1.0.0",
           "HtmlAgilityPack": "1.11.46",
           "Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation": "5.0.10",
           "Web.Factory": "1.0.0",
@@ -1501,6 +1502,19 @@
         },
         "compile": {
           "CMS.Data.dll": {}
+        }
+      },
+      "CMS.Service/1.0.0": {
+        "dependencies": {
+          "CMS.Core": "1.0.0",
+          "CMS.Data": "1.0.0",
+          "HtmlAgilityPack": "1.11.46"
+        },
+        "runtime": {
+          "CMS.Service.dll": {}
+        },
+        "compile": {
+          "CMS.Service.dll": {}
         }
       },
       "Web.Factory/1.0.0": {
@@ -3957,6 +3971,11 @@
       "sha512": ""
     },
     "CMS.Data/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "CMS.Service/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

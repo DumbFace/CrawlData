@@ -132,5 +132,11 @@ namespace Web
                 _context.SaveChanges();
             }
         }
+
+        public static string GetUrlTitle(string url)
+        {
+            var split = url.Split("/");
+            return split[split.Length - 1];
+        }
     }
 }

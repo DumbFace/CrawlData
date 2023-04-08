@@ -5,9 +5,9 @@ using System.Threading.Tasks;
 using CMS.Core.Domain;
 using CMS.Data.EFCore;
 
-namespace CMS.Data.Service.ComicService
+namespace CMS.Service.ComicService
 {
-    public interface IComicService : IRepository<Comic>
+    public class ComicService : Repository<Comic>, IComicService 
     {
         
     }

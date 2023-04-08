@@ -2,7 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using CMS.Data.Service.ComicService;
+using CMS.Service.CrawlService;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -26,7 +26,9 @@ namespace Web
         {
             services.AddControllersWithViews();
             services.AddControllersWithViews().AddRazorRuntimeCompilation();
-            services.AddTransient<IComicService, ComicService>();
+            // services.AddTransient<IComicService, ComicService>();
+            services.AddTransient<ICrawlService, CrawlService>();
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
