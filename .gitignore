@@ -1,0 +1,11 @@
+
+Library/CMS.Core/obj
+Library/CMS.Core/bin
+Library/CMS.Data/obj
+Library/CMS.Data/bin
+Library\\CMS.Service\\bin
+Library\\CMS.Service\\obj
+Prensentation/web/obj
+Prensentation/web/bin
+Prensentation/Web.Factory/obj
+Prensentation/Web.Factory/bin
