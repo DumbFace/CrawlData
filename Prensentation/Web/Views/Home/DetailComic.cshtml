@@ -17,14 +17,20 @@
             <h2>Danh sách truyện</h2>
         </div>
         <div class="col-sm-12">
-            @foreach (var item in Model.Series)
-            {
-                <h3>
-                    <a href="/@Model.Url/chuong-@item.Chap">
-                        @Model.Title - @item.Chap
-                    </a>
-                </h3>
-            }
+            <div class="row">
+                @foreach (var item in Model.Series)
+                {
+                    <div class="col-sm-6">
+
+                        <h3>
+                            <a href="/@Model.Url/chuong-@item.Chap">
+                                @Model.Title - @item.Chap
+                            </a>
+                        </h3>
+                    </div>
+                }
+            </div>
+
         </div>
     </div>
 </div>

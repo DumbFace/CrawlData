@@ -17,7 +17,7 @@ namespace CMS.Data.EFCore
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer("Server=.\\SQLEXPRESS02;Database=CrawlDB;Trusted_Connection=True;");
+            optionsBuilder.UseSqlServer("Server=.\\SQLEXPRESSKHANG;Database=CrawlDB;Trusted_Connection=True;");
         }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)

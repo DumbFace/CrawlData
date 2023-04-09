@@ -10,7 +10,9 @@ namespace CMS.Service.CrawlService
     public interface ICrawlService
     {
         Task<string> GetHtmlStringAsync(string url);
-        Task CrawlComicAsync(string url);
+        Task InitCrawlingAsync(string url);
+        Task CrawlingPagingAsync(string url, int page, HtmlDocument htmlDoc = null);
+
         void ProcessUrl(string url);
 
         int CheckPaging(HtmlDocument htmlDoc);
@@ -18,7 +20,9 @@ namespace CMS.Service.CrawlService
         Task<string> GetContentChapterAsync(string url);
 
         void WriteLog();
+        Comic CheckIfComicExist(string url, HtmlDocument htmlDoc);
 
         MetaModel GetMetaComic(HtmlDocument htmlDoc);
+
     }
 }

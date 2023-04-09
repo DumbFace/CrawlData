@@ -27,24 +27,9 @@ namespace Web.Controllers
         [HttpPost]
         public async Task<IActionResult> CreateAsync([FromBody] CrawlModel model)
         {
-            // HtmlDocument htmlDoc = new HtmlDocument();
-            // string htmlString = await GetHtmlAsync(model.Url);
-            // if (htmlString != null && htmlString != "")
-            // {
-            //     htmlDoc.LoadHtml(htmlString);
-            // }
-
-            // HtmlNode nodeUrlLink = htmlDoc.DocumentNode.SelectSingleNode("//div[@id='chapter-c']");
-            // var content = nodeUrlLink.InnerHtml;
-
-            // var meta = GetMetaTag(htmlDoc);
-
-            // var comic = AddNewComicIfExist(meta);
-
-            // await CrawlDataAsync(htmlDoc, comic);
 
 
-            await _crawlService.CrawlComicAsync(model.Url);
+            await _crawlService.InitCrawlingAsync(model.Url);
 
             return Ok();
         }
