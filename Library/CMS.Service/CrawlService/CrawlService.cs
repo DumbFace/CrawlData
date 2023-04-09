@@ -94,6 +94,7 @@ namespace CMS.Service.CrawlService
 
         public async Task<string> GetContentChapterAsync(string url)
         {
+            string content = "";
             HtmlDocument htmlDoc = new HtmlDocument();
             string htmlString = await GetHtmlStringAsync(url);
             if (htmlString != null && htmlString != "")
@@ -101,7 +102,10 @@ namespace CMS.Service.CrawlService
                 htmlDoc.LoadHtml(htmlString);
             }
             HtmlNode nodeUrlLink = htmlDoc.DocumentNode.SelectSingleNode("//div[@id='chapter-c']");
-            var content = nodeUrlLink.InnerHtml;
+            if (nodeUrlLink != null)
+            {
+                content = nodeUrlLink.InnerHtml;
+            }
             return content;
         }
 
